@@ -1,0 +1,32 @@
+.gallery {
+    width: 100%;
+    min-height: 30vh;
+    .flex-mixin(column, center, center);
+
+    .photos {
+        .flex-mixin(row, center, center);
+        flex-wrap: wrap;
+        margin-top: 25px;
+
+        .info-card {
+            .flex-mixin(column, flex-start, center);
+            min-width: 300px;
+            margin: 25px 5px;
+
+            p {
+                font-size: 1.8rem;
+            }
+
+            img {
+                margin: 10px;
+                height: 160px;
+                width: 160px;
+                border-radius: 100%;
+            }
+
+            img:hover {
+                border: 4px solid @button-hover;
+            }
+        }
+    }
+}

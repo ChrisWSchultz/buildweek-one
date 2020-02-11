@@ -1,0 +1,20 @@
+
+.footer {
+    background-color: @bg-dark;
+    color: @font-color-light;
+    padding: 3vw 0;
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    .flex-mixin(column, center, center);
+
+    .navigation {
+        .nav-flex(flex, row);
+
+        a {
+            .nav-link(0.85rem);
+        }
+    }
+}

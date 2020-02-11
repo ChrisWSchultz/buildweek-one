@@ -1,0 +1,45 @@
+
+.nav-flex(@navDisplay, @flexDir) {
+  display: @navDisplay;
+  flex-direction: @flexDir;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-link(@fontSize) {
+  color: @font-color-light;
+  text-decoration: none;
+  font-size: @fontSize;
+  margin: 0 5px;
+  padding: 10px;
+}
+
+.flex-mixin(@direction, @justify, @align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.img-bg(@img) {
+  background-image: url(@img);
+
+  width: 100vw;
+  height: auto;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta-button {
+  padding: 15px 25px;
+  background-color: @button;
+  text-decoration: none;
+  color: @font-color-light;
+  font-size: 2rem;
+  margin-top: 20px;
+  border-radius: 4px;
+}
